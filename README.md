@@ -1,0 +1,2 @@
+# BarebonesTheme
+Barebones Wordpress Theme
