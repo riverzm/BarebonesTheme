@@ -6,3 +6,16 @@
 	<?php wp_head(); ?>
 </head>
 <body>
+<header class="main-header">
+
+	<?php
+	
+		$args = array(
+			'theme_location' => 'header',
+		);
+	
+	?>
+	
+	<?php wp_nav_menu( $args ); ?>
+	
+</header> <!-- .main-header -->

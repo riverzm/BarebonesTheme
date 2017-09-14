@@ -12,6 +12,11 @@ function theme_scripts() {
 	wp_enqueue_script('main', get_theme_file_uri('assets/js/main.js'), array(), 1.0);
 }
 
+register_nav_menus(array(
+	'primary' => __('Primary Menu'),
+	'footer' => __('Footer Menu'),
+));
+
 function theme_excerpt_length($length) {
 	return 25;
 }
