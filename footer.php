@@ -1,14 +1,16 @@
 <footer class="main-footer">
+
+	<?php if(dynamic_sidebar('footer_widgets')) : else : endif; ?>
+
+	<?php 
 	
-	<?php
-	
-		$args = (
-			'theme_location' => 'footer',
+		$args = array(
+			'theme_location' => 'footer_menu',
 		);
 	
 	?>
 	
-	<?php wp_nav_menu( $args ); ?>
+	<?php wp_nav_menu($args); ?>
 
 </footer> <!-- .main-footer -->
 <?php wp_footer(); ?>

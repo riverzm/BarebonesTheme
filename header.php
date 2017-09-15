@@ -8,14 +8,14 @@
 <body>
 <header class="main-header">
 
-	<?php
+	<?php 
 	
 		$args = array(
-			'theme_location' => 'header',
+			'theme_location' => 'primary_menu',
 		);
 	
 	?>
 	
-	<?php wp_nav_menu( $args ); ?>
+	<?php wp_nav_menu($args); ?>
 	
 </header> <!-- .main-header -->
